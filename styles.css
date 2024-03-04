@@ -1,0 +1,183 @@
+@font-face {
+    font-family: "Sriracha"; /* Replace with the actual font family name */
+    src: url("Sriracha-Regular.ttf") format("truetype");
+}
+
+  
+body {
+    margin: 0;
+    font-family: "Sriracha", Roboto, sans-serif;
+    
+}
+
+span.rowTwo {
+font-family: Roboto;
+}
+    
+h3 {
+    text-align: center;
+    color: rgb(53, 0, 122);
+    padding: 0;
+    margin: 0;
+}
+
+#container {
+    background: linear-gradient(179.4deg, rgb(142, 151, 202) -16rgb(194, 161, 202), 33);
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+    letter-spacing: 1px;
+    color: black;
+}
+
+.row {
+    display: flex;
+    padding: auto;
+    text-align: center;
+    flex-grow: 1;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+
+
+#firstrow, #secondrow, #thirdrow, #fourthrow, #fifthrow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+
+   
+}
+
+
+
+.card {
+    display: flex;
+    flex-grow: 1;
+    background-color: rgb(228, 239, 239);
+    margin: 0.3rem 0.3rem;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    overflow: auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 1rem;
+}
+
+.card:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+}
+
+.selected {
+    /* box-shadow: rgba(240, 225, 225, 0.17) 0px -23px 25px 0px inset, rgba(38, 143, 212, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(223, 210, 210, 0.09) 0px 16px 8px, rgba(228, 203, 203, 0.09) 0px 32px 16px !important;
+    background-image: linear-gradient(rgb(223, 217, 132), rgb(223, 145, 61)) !important;
+    color: black; */
+    -webkit-box-shadow:0px 0px 10px 4px rgba(7, 90, 66, 0.9);
+    -moz-box-shadow: 0px 0px 10px 4px rgba(65, 96, 8, 0.9);
+    box-shadow: 0px 0px 10px 4px rgba(6, 63, 117, 0.9);
+
+
+}
+
+
+
+sup {
+    position: relative;
+    bottom: 0.3rem;
+}
+
+.rowOne {
+    background-image: linear-gradient(120deg, #a1fdaf 0%, #c2fbc5 100%);
+}
+
+.rowTwo {
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+.rowThree {
+    
+    background-image: linear-gradient(120deg, #eba1fd 0%, #fbc2e9 100%);
+
+
+}
+
+.rowFour {
+    background-image: linear-gradient(120deg, #e79894 0%, #fbccc2 100%);
+}   
+
+.rowFive {
+    
+    background-image: linear-gradient(120deg, #d4e392 0%, #d6eaa5 100%);
+}
+
+#correctAnswers {
+    display: flex;
+    background-color: azure;
+    justify-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+#correctAnswers span {
+    width: 30%;
+    margin: 2rem;
+    text-align: center;
+    overflow: auto;
+
+}
+
+sub {
+    position: relative;
+    top: 0.2rem;
+}
+
+
+.answers {
+    display: flex;
+    min-width: 100%;
+}
+
+
+
+#submitButtonWrapper {
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#submitButton {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #a3efeb;
+    background-image: linear-gradient(rgb(108, 36, 201), rgb(20, 6, 66));
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  #submitButton:hover {
+    background-color: #3323c4;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  #submitButton:active {
+    transform: translateY(-1px);
+    background-color: #584bd1;
+  }
+
+
+
