@@ -7,6 +7,7 @@
 body {
     margin: 0;
     font-family: "Sriracha", Roboto, sans-serif;
+    box-sizing: border-box;
     
 }
 
@@ -57,6 +58,7 @@ span {
 
 .card {
     display: flex;
+    border: 1px solid lightblue;
     flex-grow: 1;
     background-color: rgb(228, 239, 239);
     margin: 0.3rem 0.3rem;
@@ -68,23 +70,10 @@ span {
     border-radius: 1rem;
 }
 
-.card:hover {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-
-}
-
 .selected {
-    /* box-shadow: rgba(240, 225, 225, 0.17) 0px -23px 25px 0px inset, rgba(38, 143, 212, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(223, 210, 210, 0.09) 0px 16px 8px, rgba(228, 203, 203, 0.09) 0px 32px 16px !important;
-    background-image: linear-gradient(rgb(223, 217, 132), rgb(223, 145, 61)) !important;
-    color: black; */
-    -webkit-box-shadow:0px 0px 10px 4px rgba(7, 90, 66, 0.9);
-    -moz-box-shadow: 0px 0px 10px 4px rgba(65, 96, 8, 0.9);
-    box-shadow: 0px 0px 10px 4px rgba(6, 63, 117, 0.9);
-
-
+    border: solid black;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
-
-
 
 sup {
     position: relative;
@@ -100,14 +89,11 @@ sup {
 }
 
 .rowThree {
-    
-    background-image: linear-gradient(120deg, #eba1fd 0%, #fbc2e9 100%);
-
-
+    background-image: linear-gradient(120deg, #e4c4ec 0%, #fbc2e9 100%);
 }
 
 .rowFour {
-    background-image: linear-gradient(120deg, #e79894 0%, #fbccc2 100%);
+    background-image: linear-gradient(120deg, #e2c5c4 0%, #fbccc2 100%);
 }   
 
 .rowFive {
@@ -141,8 +127,6 @@ sub {
     display: flex;
     min-width: 100%;
 }
-
-
 
 #submitButtonWrapper {
     margin: 1rem;
@@ -178,6 +162,5 @@ sub {
     transform: translateY(-1px);
     background-color: #584bd1;
   }
-
 
 
